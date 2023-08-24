@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalExamApp.Views.BienvenidaPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20,100,20,0" BackgroundColor="#FAFAFA">
+
+                <Picker x:Name="PkrUser" Title="Select User" ItemDisplayBinding="{Binding UserID}"/>
+            
+                <Button x:Name="BtnIngreso" 
+                        Text="Ingreso"
+                        CornerRadius="25" 
+                        BackgroundColor="Green" 
+                        FontSize="20" Clicked="BtnIngreso_Clicked"/>
+                
+                <Button x:Name="BtnPreguntas" 
+                        Text="Ver todas las preguntas"
+                        CornerRadius="25" 
+                        BackgroundColor="Green" 
+                        FontSize="20" Clicked="BtnPreguntas_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
